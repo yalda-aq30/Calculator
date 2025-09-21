@@ -80,7 +80,14 @@ void getInput(double &number_1 , char &opr , double &number_2){
         std::cout <<"Error! Please enter in format: number operator number" << std::endl;
         opr = 'e';
         return;
+    } 
+
+    if (num2_str.empty()) {
+        std::cout << "Please enter number 2! " << std::endl;
+        opr = 'e';
+        return;
     }
+
 
 
     if (!isNumber(num1_str) || !isNumber(num2_str)) {
@@ -94,11 +101,6 @@ void getInput(double &number_1 , char &opr , double &number_2){
     
     
 
-
-
-
-    
-  
     
      
 }
