@@ -2,16 +2,28 @@
 #include <string> 
 
 
-int operate(int a , int b, char operatorValue){
-    // All calcuations should be here
+int operate(int number_1 , int number_2, char operatorValue){
+    if (operatorValue == '+') {
+        return number_1 + number_2;
+    }
+    else if (operatorValue == '-') {
+        return number_1 - number_2;
+    }
+    else if (operatorValue == '*') {
+        return number_1 * number_2;
+    }
+    else if (operatorValue == '/'){
+        return number_1 / number_2;
+    } 
+    else {
+        std::cout << "Unknown operator!" << std::endl;
+        return 0;
+    }
 
-    // return the result
 }
 
-// Learn about refrences 
-int getInput(int &numberA,int &numberB, char operatorValue){
-    numberA = 2;
-    // Input Here
+int getInput(int &number_1,int &number_2, char operatorValue){
+    number_1 = 2; 
 }
 
 
@@ -21,7 +33,7 @@ int main() {
 
     while(true){
         std::cout << "calculator: " << std::endl;
-        int a,b;
+        int a,b; 
 
         getInput(a,b,z);
         int result = operate(x,y,z);

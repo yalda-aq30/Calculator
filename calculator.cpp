@@ -22,7 +22,7 @@ double operate(double number_1 ,char operatorValue, double number_2 ){
         return number_1 / number_2 ; 
     } 
     else {
-        std::cout << "Unknown operator!" << std::endl;
+        std::cout << "Unknown operatorfhfh!" << std::endl;
         return 0;
     }
 
@@ -88,8 +88,6 @@ void getInput(double &number_1 , char &opr , double &number_2){
         return;
     }
 
-
-
     if (!isNumber(num1_str) || !isNumber(num2_str)) {
         std::cout << "Error! Please enter correct number..." << std::endl;  
         opr = 'e'; 
@@ -98,15 +96,11 @@ void getInput(double &number_1 , char &opr , double &number_2){
 
     number_1 = std::stod(num1_str); 
     number_2 = std::stod(num2_str); 
-    
-    
-
-    
-     
+ 
 }
 
 
-
+Unknown
 
 
 
